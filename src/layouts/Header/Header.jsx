@@ -1,6 +1,8 @@
 import './Header.scss'
 import Logo from "@/components/Logo/Logo";
 import classNames from "classnames";
+import Button from "@/components/Button";
+
 
 const Header = (props) => {
   const {url,} = props;
@@ -22,7 +24,7 @@ const Header = (props) => {
               className="header__menu-item"
             >
               <a
-                className= {classNames("header__menu-link", {
+                className={classNames("header__menu-link", {
                   'is-active': href === url,
                 })}
                 href={href}
@@ -33,6 +35,22 @@ const Header = (props) => {
           ))}
         </ul>
       </nav>
+      <div className="header__actions">
+        <Button
+          className='header__button'
+          label = "search"
+          mode = "transparent"
+          isLabelHidden
+          iconName='search'
+        />
+        <Button
+          className='header__button'
+          label="Notifications"
+          mode ="transparent"
+          isLabelHidden
+          iconName='notification'
+        />
+      </div>
     </div>
   </header>)
 }
