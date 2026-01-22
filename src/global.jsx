@@ -23,7 +23,9 @@ export default function (props) {
         <link rel="manifest" href="/site.webmanifest"/>
       </Head>
       <Header />
-      <Content>{children}</Content>
+      <Content>
+        {children}
+      </Content>
       <Footer />
     </>
   )
