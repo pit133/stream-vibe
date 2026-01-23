@@ -1,7 +1,8 @@
 import './Header.scss'
-import Logo from "@/components/Logo/Logo";
+import Logo from "@/components/Logo";
 import classNames from "classnames";
 import Button from "@/components/Button";
+import BurgerButton from "@/components/BurgerButton";
 
 
 const Header = (props) => {
@@ -50,6 +51,7 @@ const Header = (props) => {
           isLabelHidden
           iconName='notification'
         />
+        <BurgerButton className="header__burger-button" />
       </div>
     </div>
   </header>)

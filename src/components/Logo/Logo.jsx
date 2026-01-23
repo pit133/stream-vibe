@@ -11,7 +11,7 @@ const Logo = (props) => {
   return (
     <a
       className={classNames(className, 'logo')}
-      href="/"
+      href="/public"
       title={title}
       aria-label={title}
     >
